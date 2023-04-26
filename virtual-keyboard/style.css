@@ -32,9 +32,61 @@ body{
     color:#333B41;
         
 }
+.wrapper{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 800px;
+    text-align: center;
+}
 
 .keyboard{
-    border: 2px solid black;
-    max-width: 700px;
-    height: 300px;
+    max-width: 1085px;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(31, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
 }
+
+.key {
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+  }
+
+.keyboard > div:nth-child(15){
+    grid-column: span 3;
+}
+
+.keyboard > div:nth-child(54){
+
+    grid-column: span 3;
+}
+
+  .keyboard > div:nth-child(14),
+
+  .keyboard > div:nth-child(41){
+    grid-column: span 4;
+}
+
+.keyboard > div:nth-child(42),
+.keyboard > div:nth-child(53){
+    grid-column: span 5;
+}
+
+.keyboard > div:nth-child(59){
+    grid-column: span 13;
+}
+
