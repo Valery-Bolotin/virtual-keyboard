@@ -51,7 +51,7 @@ body{
     background-color: rgb(197, 197, 197);
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(31, 30px);
+    grid-template-columns: repeat(30, 30px);
     grid-template-rows: repeat(5, 60px);
     grid-gap: 5px;
 }
@@ -67,26 +67,23 @@ body{
   }
 
 .keyboard > div:nth-child(15){
-    grid-column: span 3;
+    grid-column: span 2;
 }
 
-.keyboard > div:nth-child(54){
 
-    grid-column: span 3;
-}
 
   .keyboard > div:nth-child(14),
-
-  .keyboard > div:nth-child(41){
+  .keyboard > div:nth-child(30),
+  .keyboard > div:nth-child(42){
     grid-column: span 4;
 }
 
-.keyboard > div:nth-child(42),
-.keyboard > div:nth-child(53){
-    grid-column: span 5;
+.keyboard > div:nth-child(43),
+.keyboard > div:nth-child(55){
+    grid-column: span 4;
 }
 
 .keyboard > div:nth-child(59){
-    grid-column: span 13;
+    grid-column: span 14;
 }
 

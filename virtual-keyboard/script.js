@@ -21,8 +21,12 @@ info.className = "info";
 info.innerHTML = "Клавиатура создана в операционной системе Windows <br> Для переключения языка используйте сочетание клавишь:";
 keyboard.after(info);
 
+let count = 1;
 for (let i = 0; i < 64; i++) {
-    const div = document.createElement('div');
-    div.className = 'key';
-    keyboard.append(div);
+    const key = document.createElement('div');
+    key.className = 'key';
+    
+    key.innerHTML = count;
+    count +=1
+    keyboard.append(key);
   }
