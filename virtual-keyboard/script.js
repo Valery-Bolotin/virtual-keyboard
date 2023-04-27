@@ -32,6 +32,7 @@ let l =0;
 for (let i = 0; i < 64; i++) {
     const key = document.createElement('div');
     key.className = 'key';
+    
   if(i >= 0 && i < 13 || i ===27){
     key.innerHTML = globalKeys[l];
     l += 1;
@@ -42,3 +43,16 @@ for (let i = 0; i < 64; i++) {
    }
     keyboard.append(key);
   }
+
+  // Получаем ссылки на элементы клавиатуры и области вывода
+let virtualKeyboard = document.querySelector(".keyboard");
+let outputArea = document.querySelector(".textarea");
+
+// Обрабатываем нажатия на клавиши клавиатуры
+virtualKeyboard.addEventListener("click", function(event) {
+    // Получаем символ, соответствующий нажатой клавише
+    let keyPressed = event.target.innerText;
+    
+    // Отображаем символ в области вывода
+    outputArea.innerHTML += keyPressed;
+});
