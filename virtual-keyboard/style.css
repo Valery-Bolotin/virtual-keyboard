@@ -76,3 +76,6 @@ body{
     grid-column: span 14;
 }
 
+.selected {
+    background-color: yellow;
+  }
