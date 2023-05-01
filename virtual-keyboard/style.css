@@ -43,6 +43,7 @@ body{
 }
 
 .keyboard{
+    pointer-events: none;
     max-width: 1085px;
     padding: 20px;
     background-color: rgb(197, 197, 197);
@@ -54,6 +55,7 @@ body{
 }
 
 .key {
+    pointer-events: auto;
     background-color: rgb(243, 243, 243);
     border: 2px solid black;
     border-radius: 5px;
