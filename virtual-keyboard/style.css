@@ -1,0 +1,83 @@
+::before
+::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+ * {
+margin: 0;
+padding: 0;
+text-decoration: none;
+list-style-type: none;
+scroll-behavior:smooth;
+}
+a{
+    text-decoration: none;
+    
+}
+ul, ol,li{
+    list-style: none;
+}
+img{
+    vertical-align: top;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body{
+    
+    color:#333B41;
+        
+}
+.wrapper{
+    
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 1085px;
+    text-align: center;
+}
+
+.keyboard{
+    pointer-events: none;
+    max-width: 1085px;
+    padding: 20px;
+    background-color: rgb(197, 197, 197);
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(30, 30px);
+    grid-template-rows: repeat(5, 60px);
+    grid-gap: 5px;
+}
+
+.key {
+    pointer-events: auto;
+    background-color: rgb(243, 243, 243);
+    border: 2px solid black;
+    border-radius: 5px;
+    grid-column: span 2;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 17px;
+    cursor: pointer;
+  }
+
+.keyboard > div:nth-child(14),
+.keyboard > div:nth-child(30),
+.keyboard > div:nth-child(42),
+.keyboard > div:nth-child(43),
+.keyboard > div:nth-child(55){
+    grid-column: span 4;
+}
+
+.keyboard > div:nth-child(59){
+    grid-column: span 14;
+}
+
+.selected {
+    background-color: yellow;
+  }
